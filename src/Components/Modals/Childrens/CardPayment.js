@@ -31,7 +31,7 @@ import {
 import ConfirmationModal from "../ConfirmationModal";
 const { usersReset } = homeSlice.actions;
 import { CardField, useStripe, initStripe } from '@stripe/stripe-react-native';
-import { STRIPE_PUBLCI_KEY } from '../../../constants';
+import { STR_PUBLCI_KEY } from '../../../constants';
 import LoaderComponent from "../../LoaderComponent";
 
 const CardPayment = (props) => {
@@ -181,7 +181,7 @@ const CardPayment = (props) => {
   // useEffect(() => {
   //   async function initialize() {
   //     await initStripe({
-  //       publishableKey: STRIPE_PUBLCI_KEY,
+  //       publishableKey: STR_PUBLCI_KEY,
   //     });
   //   }
   //   initialize().catch(console.error);

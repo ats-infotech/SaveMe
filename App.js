@@ -8,7 +8,7 @@ import { persistStore } from 'redux-persist';
 import { PersistGate } from 'redux-persist/integration/react';
 import { setAuthorization } from './src/networking/utils';
 import { StripeProvider } from '@stripe/stripe-react-native';
-import { STRIPE_PUBLCI_KEY } from './src/constants';
+import { STR_PUBLCI_KEY } from './src/constants';
 import messaging from "@react-native-firebase/messaging";
 import {enableLatestRenderer} from 'react-native-maps';
 
@@ -62,7 +62,7 @@ export default function App() {
     //   {/* Rest of your app code */}
     //   <MainNavigator />
     // </NavigationContainer>
-    <StripeProvider publishableKey={STRIPE_PUBLCI_KEY}
+    <StripeProvider publishableKey={STR_PUBLCI_KEY}
       merchantIdentifier="merchant.com.saveme" // required for Apple Pay
       urlScheme="your-url-scheme" >
       <NavigationContainer ref={navigationRef}>

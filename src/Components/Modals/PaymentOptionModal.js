@@ -7,10 +7,10 @@ import RateusModal from "./Childrens/RateusModal";
 import CardPayment from "./Childrens/CardPayment";
 import {
   API_URL,
-  API_URL_STRIPE,
+  API_URL_STR,
   fontsName,
   screenTitle,
-  STRIPE_PUBLCI_KEY,
+  STR_PUBLCI_KEY,
 } from "../../constants";
 import AlertModal from "./AlertModal";
 import {
@@ -255,7 +255,7 @@ const PaymentOptionModal = (props) => {
   }, []);
 
   // const fetchPaymentIntentClientSecret = async () => {
-  //   const response = await fetch(`${API_URL_STRIPE}/create-payment-intent`, {
+  //   const response = await fetch(`${API_URL_STR}/create-payment-intent`, {
   //     method: 'POST',
   //     headers: {
   //       'Content-Type': 'application/json',
